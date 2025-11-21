@@ -4,6 +4,8 @@
  */
 package com.mycompany.mavenproject1.LaliModas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author innot
@@ -27,27 +29,38 @@ public class FormaDePagamento extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnCartao = new javax.swing.JButton();
+        btnPix = new javax.swing.JButton();
+        btnDinheiro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 255, 153));
 
+        jLabel1.setBackground(new java.awt.Color(204, 255, 204));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Escolha a forma de pagamento - $");
 
-        jButton1.setText("Cartão💳");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCartao.setBackground(new java.awt.Color(204, 255, 204));
+        btnCartao.setText("Cartão💳");
+        btnCartao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCartaoActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Pix💸");
-
-        jButton3.setText("Dinheiro 💵💸");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnPix.setBackground(new java.awt.Color(204, 255, 204));
+        btnPix.setText("Pix💸");
+        btnPix.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnPixActionPerformed(evt);
+            }
+        });
+
+        btnDinheiro.setBackground(new java.awt.Color(204, 255, 204));
+        btnDinheiro.setText("Dinheiro 💵💸");
+        btnDinheiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDinheiroActionPerformed(evt);
             }
         });
 
@@ -55,45 +68,58 @@ public class FormaDePagamento extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(65, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(56, 56, 56))
             .addGroup(layout.createSequentialGroup()
+                .addGap(103, 103, 103)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addComponent(jButton3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(79, Short.MAX_VALUE))
+                    .addComponent(btnDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPix, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel1)
-                .addGap(53, 53, 53)
-                .addComponent(jButton2)
-                .addGap(28, 28, 28)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addComponent(btnPix)
+                .addGap(32, 32, 32)
+                .addComponent(btnCartao)
+                .addGap(29, 29, 29)
+                .addComponent(btnDinheiro)
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDinheiroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        JOptionPane.showMessageDialog(this, "Compra concluída via Dinheiro!");
+dispose();
+new Menu().setVisible(true);
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnDinheiroActionPerformed
+
+    private void btnCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCartaoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(this, "Compra concluída com Cartão!");
+dispose();
+new Menu().setVisible(true);
+
+    }//GEN-LAST:event_btnCartaoActionPerformed
+
+    private void btnPixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPixActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Compra concluída via PIX!");
+dispose();
+new Menu().setVisible(true);
+
+    }//GEN-LAST:event_btnPixActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,9 +157,9 @@ public class FormaDePagamento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnCartao;
+    private javax.swing.JButton btnDinheiro;
+    private javax.swing.JButton btnPix;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
