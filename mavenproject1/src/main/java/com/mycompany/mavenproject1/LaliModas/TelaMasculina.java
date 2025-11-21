@@ -28,41 +28,70 @@ public class TelaMasculina extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btnVoltar = new javax.swing.JButton();
+        btnCamisaBas = new javax.swing.JButton();
+        btnBermuda = new javax.swing.JButton();
+        btnPolo = new javax.swing.JButton();
+        btnJeansMasc = new javax.swing.JButton();
+        btnCalcaJeansMasc = new javax.swing.JButton();
+        btnCuecaBox = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 255, 255));
+
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setForeground(new java.awt.Color(204, 204, 255));
 
         jLabel1.setText("Categoria Masculina");
 
-        jButton1.setText("Voltar");
-
-        jButton2.setText("👕 Camiseta Básica — R$ 29,90");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnVoltar.setText("Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnVoltarActionPerformed(evt);
             }
         });
 
-        jButton3.setText("🩳 Bermuda Moletom — R$ 49,90");
-
-        jButton4.setText("👔 Camisa Polo — R$ 59,90");
-
-        jButton5.setText("👖 Calça Jeans Masculina — R$ 89,90");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCamisaBas.setText("👕 Camiseta Básica — R$ 29,90");
+        btnCamisaBas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnCamisaBasActionPerformed(evt);
             }
         });
 
-        jButton6.setText("🧥 Moletom Masculino — R$ 79,90");
+        btnBermuda.setText("🩳 Bermuda Moletom — R$ 49,90");
+        btnBermuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBermudaActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("🩲 Cueca Boxer (kit com 2) — R$ 39,90");
+        btnPolo.setText("👔 Camisa Polo — R$ 59,90");
+        btnPolo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPoloActionPerformed(evt);
+            }
+        });
+
+        btnJeansMasc.setText("👖 Calça Jeans Masculina — R$ 89,90");
+        btnJeansMasc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJeansMascActionPerformed(evt);
+            }
+        });
+
+        btnCalcaJeansMasc.setText("🧥 Moletom Masculino — R$ 79,90");
+        btnCalcaJeansMasc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcaJeansMascActionPerformed(evt);
+            }
+        });
+
+        btnCuecaBox.setText("🩲 Cueca Boxer (kit com 2) — R$ 39,90");
+        btnCuecaBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCuecaBoxActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -72,22 +101,22 @@ public class TelaMasculina extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnBermuda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCamisaBas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnPolo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(56, 56, 56)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton6)
-                            .addComponent(jButton7)
-                            .addComponent(jButton5)))
+                            .addComponent(btnCuecaBox)
+                            .addComponent(btnJeansMasc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCalcaJeansMasc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(226, 226, 226)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton1)))
-                .addContainerGap(87, Short.MAX_VALUE))
+                        .addGap(252, 252, 252)
+                        .addComponent(btnVoltar)))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,42 +125,73 @@ public class TelaMasculina extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton7))
+                    .addComponent(btnCamisaBas)
+                    .addComponent(btnCuecaBox))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton5))
+                    .addComponent(btnBermuda)
+                    .addComponent(btnJeansMasc))
                 .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton6))
-                .addGap(49, 49, 49)
-                .addComponent(jButton1)
-                .addContainerGap(73, Short.MAX_VALUE))
+                    .addComponent(btnPolo)
+                    .addComponent(btnCalcaJeansMasc))
+                .addGap(53, 53, 53)
+                .addComponent(btnVoltar)
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnCamisaBasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCamisaBasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnCamisaBasActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnJeansMascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJeansMascActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnJeansMascActionPerformed
+
+    private void btnBermudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBermudaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBermudaActionPerformed
+
+    private void btnPoloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoloActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPoloActionPerformed
+
+    private void btnCuecaBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuecaBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCuecaBoxActionPerformed
+
+    private void btnCalcaJeansMascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcaJeansMascActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcaJeansMascActionPerformed
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        // TODO add your handling code here: 
+        new TelaMasculina().setVisible(true);
+dispose();
+
+        
+
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,13 +229,13 @@ public class TelaMasculina extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton btnBermuda;
+    private javax.swing.JButton btnCalcaJeansMasc;
+    private javax.swing.JButton btnCamisaBas;
+    private javax.swing.JButton btnCuecaBox;
+    private javax.swing.JButton btnJeansMasc;
+    private javax.swing.JButton btnPolo;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
