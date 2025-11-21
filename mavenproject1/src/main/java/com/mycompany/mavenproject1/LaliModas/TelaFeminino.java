@@ -28,31 +28,69 @@ public class TelaFeminino extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btnVoltar = new javax.swing.JButton();
+        bntFloral = new javax.swing.JButton();
+        btnCropped = new javax.swing.JButton();
+        btnShort = new javax.swing.JButton();
+        btnBasica = new javax.swing.JButton();
+        btnCalcaFem = new javax.swing.JButton();
+        btnMidi = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel1.setText("Categoria Feminina");
 
-        jButton1.setText("Voltar");
+        btnVoltar.setText("Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("🌸 Vestido Floral — R$ 99,90");
+        bntFloral.setText("🌸 Vestido Floral — R$ 99,90");
+        bntFloral.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntFloralActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("👚 Cropped Liso — R$ 29,90");
+        btnCropped.setText("👚 Cropped Liso — R$ 29,90");
+        btnCropped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCroppedActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("🩳 Short Jeans — R$ 49,90");
+        btnShort.setText("🩳 Short Jeans — R$ 49,90");
+        btnShort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShortActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("👕 Blusa Básica — R$ 24,90");
+        btnBasica.setText("👕 Blusa Básica — R$ 24,90");
+        btnBasica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBasicaActionPerformed(evt);
+            }
+        });
 
-        jButton6.setText("👖 Calça Jeans Feminina — R$ 79,90");
+        btnCalcaFem.setText("👖 Calça Jeans Feminina — R$ 79,90");
+        btnCalcaFem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcaFemActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("👗 Vestido Midi — R$ 89,90");
+        btnMidi.setText("👗 Vestido Midi — R$ 89,90");
+        btnMidi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMidiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -61,24 +99,24 @@ public class TelaFeminino extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(91, 91, 91)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnShort, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCropped, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bntFloral))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5)
-                    .addComponent(jButton7)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(77, 77, 77))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnCalcaFem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnBasica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnMidi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(93, 93, 93))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(251, 251, 251)
-                        .addComponent(jButton1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(263, 263, 263)
+                .addComponent(btnVoltar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(221, 221, 221))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -87,19 +125,19 @@ public class TelaFeminino extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton7))
+                    .addComponent(bntFloral)
+                    .addComponent(btnMidi))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3)
-                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(btnCropped)
+                    .addComponent(btnBasica, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton6))
-                .addGap(46, 46, 46)
-                .addComponent(jButton1)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCalcaFem)
+                    .addComponent(btnShort))
+                .addGap(49, 49, 49)
+                .addComponent(btnVoltar)
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -115,6 +153,37 @@ public class TelaFeminino extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bntFloralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntFloralActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntFloralActionPerformed
+
+    private void btnCroppedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCroppedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCroppedActionPerformed
+
+    private void btnShortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShortActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShortActionPerformed
+
+    private void btnMidiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMidiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMidiActionPerformed
+
+    private void btnBasicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBasicaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBasicaActionPerformed
+
+    private void btnCalcaFemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcaFemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalcaFemActionPerformed
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+        new TelaFeminino().setVisible(true);
+dispose();
+
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,13 +221,13 @@ public class TelaFeminino extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton bntFloral;
+    private javax.swing.JButton btnBasica;
+    private javax.swing.JButton btnCalcaFem;
+    private javax.swing.JButton btnCropped;
+    private javax.swing.JButton btnMidi;
+    private javax.swing.JButton btnShort;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
