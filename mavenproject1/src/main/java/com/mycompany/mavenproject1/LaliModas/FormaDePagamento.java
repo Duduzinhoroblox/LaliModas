@@ -7,6 +7,7 @@ package com.mycompany.mavenproject1.LaliModas;
 import javax.swing.JOptionPane;
 
 /**
+ * isso
  *
  * @author innot
  */
@@ -99,26 +100,23 @@ public class FormaDePagamento extends javax.swing.JFrame {
 
     private void btnDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDinheiroActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Compra concluída via Dinheiro!");
-dispose();
-new Menu().setVisible(true);
-
+        JOptionPane.showMessageDialog(this, "Compra concluída via Dinheiro, Obrigado por comprar na LalisaFashion!");
+        dispose();
+        new Menu().setVisible(true);
     }//GEN-LAST:event_btnDinheiroActionPerformed
 
     private void btnCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCartaoActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Compra concluída com Cartão!");
-dispose();
-new Menu().setVisible(true);
-
+        JOptionPane.showMessageDialog(this, "Compra concluída via cartão, Obrigado por comprar na LalisaFashion!");
+        dispose();
+        new Menu().setVisible(true);
     }//GEN-LAST:event_btnCartaoActionPerformed
 
     private void btnPixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPixActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Compra concluída via PIX!");
-dispose();
-new Menu().setVisible(true);
-
+        JOptionPane.showMessageDialog(this, "Compra concluída via PIX, Obrigado por comprar na LalisaFashion!");
+        dispose();
+        new Menu().setVisible(true);
     }//GEN-LAST:event_btnPixActionPerformed
 
     /**
