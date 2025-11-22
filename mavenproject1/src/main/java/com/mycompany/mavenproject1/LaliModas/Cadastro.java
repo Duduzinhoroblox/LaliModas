@@ -149,40 +149,24 @@ public class Cadastro extends javax.swing.JFrame {
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         // TODO add your handling code here: 
-      
-   
-    if (txtNome.getText().trim().isEmpty() ||
-        txtEndereco.getText().trim().isEmpty() ||
-        txtNumero.getText().trim().isEmpty() ||
-        txtBairro.getText().trim().isEmpty() ||
-        txtCidade.getText().trim().isEmpty()) {
 
-        JOptionPane.showMessageDialog(null, 
-            "Por favor, preencha todos os campos!");
-        return; 
-    }
+        if (txtNome.getText().trim().isEmpty()
+                || txtEndereco.getText().trim().isEmpty()
+                || txtNumero.getText().trim().isEmpty()
+                || txtBairro.getText().trim().isEmpty()
+                || txtCidade.getText().trim().isEmpty()) {
 
-    
-    JOptionPane.showMessageDialog(null,
-        "Bem-vindo, " + txtNome.getText() + "! Cadastro concluído com sucesso!");
+            JOptionPane.showMessageDialog(null,
+                    "Por favor, preencha todos os campos!");
+            return;
+        }
 
-    new Menu ().setVisible(true);
-    this.dispose();
+        JOptionPane.showMessageDialog(null,
+                "Bem-vindo, " + txtNome.getText() + "! Cadastro concluído com sucesso!");
 
+        new Menu().setVisible(true);
+        this.dispose();
 
-        
-    
-
-
-                                      
-   
-
-                                               
-    
-
-
-
-       
 
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
@@ -244,5 +228,3 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JTextField txtUf;
     // End of variables declaration//GEN-END:variables
 }
-
-
