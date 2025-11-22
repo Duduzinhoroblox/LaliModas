@@ -119,14 +119,14 @@ public class Menu extends javax.swing.JFrame {
     private void btnFemininoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFemininoActionPerformed
         // TODO add your handling code here:
         new TelaFeminino().setVisible(true);
-dispose();
+        dispose();
 
     }//GEN-LAST:event_btnFemininoActionPerformed
 
     private void btnMasculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasculinoActionPerformed
         // TODO add your handling code here:
         new TelaMasculina().setVisible(true);
-dispose();
+        dispose();
 
     }//GEN-LAST:event_btnMasculinoActionPerformed
 
