@@ -156,32 +156,50 @@ public class TelaFeminino extends javax.swing.JFrame {
 
     private void bntFloralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntFloralActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_bntFloralActionPerformed
 
     private void btnCroppedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCroppedActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnCroppedActionPerformed
 
     private void btnShortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShortActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnShortActionPerformed
 
     private void btnMidiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMidiActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnMidiActionPerformed
 
     private void btnBasicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBasicaActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnBasicaActionPerformed
 
     private void btnCalcaFemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcaFemActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnCalcaFemActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here:
-        new TelaFeminino().setVisible(true);
-dispose();
+        new Menu().setVisible(true);
+        dispose();
 
     }//GEN-LAST:event_btnVoltarActionPerformed
 
