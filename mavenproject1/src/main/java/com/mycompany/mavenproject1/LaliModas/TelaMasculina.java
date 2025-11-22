@@ -162,34 +162,51 @@ public class TelaMasculina extends javax.swing.JFrame {
 
     private void btnCamisaBasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCamisaBasActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnCamisaBasActionPerformed
 
     private void btnJeansMascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJeansMascActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnJeansMascActionPerformed
 
     private void btnBermudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBermudaActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnBermudaActionPerformed
 
     private void btnPoloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoloActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnPoloActionPerformed
 
     private void btnCuecaBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuecaBoxActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnCuecaBoxActionPerformed
 
     private void btnCalcaJeansMascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcaJeansMascActionPerformed
         // TODO add your handling code here:
+        new FormaDePagamento().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_btnCalcaJeansMascActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here: 
-        new TelaMasculina().setVisible(true);
-dispose();
+        new Menu().setVisible(true);
+        dispose();
 
-        
 
     }//GEN-LAST:event_btnVoltarActionPerformed
 
